@@ -1,0 +1,17 @@
+product_id,product_name,category,orders,returned_orders,return_rate_pct,net_gmv,returned_net_gmv
+P11,Milky Soft Baby Lotion,Babycare,17,2,11.76,12498.2,8073.0
+P10,Rice Sunscreen SPF50,Skincare,16,5,31.25,9788.2,3771.6
+P03,Argan Hair Mask,Haircare,15,4,26.67,12399.3,3594.0
+P07,Vitamin C Serum,Skincare,12,4,33.33,8038.5,3005.7
+P02,Onion Shampoo,Haircare,11,3,27.27,6543.6,1795.5
+P08,Tea Tree Face Wash,Skincare,17,6,35.29,5404.4,1763.3
+P04,Anti-Hairfall Serum,Haircare,7,3,42.86,5841.0,1557.6
+P12,Baby Shampoo,Babycare,6,4,66.67,1767.9,1319.7
+P05,Rice Water Conditioner,Haircare,10,2,20.0,15356.0,837.6
+P06,Vitamin C Face Wash,Skincare,7,2,28.57,1992.0,697.2
+P01,Onion Hair Oil,Haircare,11,2,18.18,4816.2,593.3
+P13,Baby Massage Oil,Babycare,7,1,14.29,2538.9,558.0
+P16,Aloe Vera Gel,PersonalCare,10,3,30.0,1810.9,477.6
+P09,Ubtan Face Mask,Skincare,8,2,25.0,2122.9,448.5
+P14,Charcoal Deodorant,PersonalCare,14,2,14.29,3323.3,298.5
+P15,Tea Tree Body Wash,PersonalCare,12,0,0.0,5618.9,0.0

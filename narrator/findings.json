@@ -1,0 +1,312 @@
+{
+  "cleaned_total_revenue_inr": 97358.30,
+  "raw_total_revenue_inr": 99860.20,
+  "duplicate_reconciliation_delta_inr": 2501.90,
+  "return_rate_by_payment": {
+    "COD": 44.4,
+    "CARD": 14.7,
+    "UPI": 18.9
+  },
+  "highest_risk_segment": {
+    "payment_method": "COD",
+    "city_tier": 2,
+    "return_rate_pct": 54.5
+  },
+  "true_peak_month": {
+    "month": "2026-03",
+    "revenue_inr": 20318.90
+  },
+  "outlier_inflated_month": {
+    "month": "2026-01",
+    "apparent_revenue_inr": 29582.10,
+    "corrected_revenue_inr": 11637.10
+  },
+  "chart_return_rate_by_payment": [
+    {
+      "payment_method": "COD",
+      "orders": 54,
+      "return_rate": 0.4444,
+      "return_rate_pct": 44.4
+    },
+    {
+      "payment_method": "UPI",
+      "orders": 53,
+      "return_rate": 0.1887,
+      "return_rate_pct": 18.9
+    },
+    {
+      "payment_method": "CARD",
+      "orders": 68,
+      "return_rate": 0.1471,
+      "return_rate_pct": 14.7
+    }
+  ],
+  "chart_monthly_revenue": [
+    {
+      "order_month": "2026-01",
+      "order_value": 11637.1
+    },
+    {
+      "order_month": "2026-02",
+      "order_value": 13195.5
+    },
+    {
+      "order_month": "2026-03",
+      "order_value": 20318.9
+    },
+    {
+      "order_month": "2026-04",
+      "order_value": 9495.3
+    },
+    {
+      "order_month": "2026-05",
+      "order_value": 13151.1
+    },
+    {
+      "order_month": "2026-06",
+      "order_value": 11615.4
+    }
+  ],
+  "sql_report": {
+    "source_database": "mamaearth.db",
+    "cleaning_rules": [
+      "Payment method is trimmed and grouped as UPI, COD, or Card, ignoring letter case.",
+      "A blank discount is treated as 0 when calculating line revenue.",
+      "A blank rating stays missing and is excluded from the average rating.",
+      "Orders with quantity above 10 are excluded from rates and revenue as quantity outliers.",
+      "Net revenue keeps non-returned lines only: price x quantity x (1 - discount_pct / 100).",
+      "Possible duplicate order rows are reported and still included in the totals."
+    ],
+    "dataset": {
+      "customers": 45,
+      "products": 16,
+      "orders": 180,
+      "min_order_date": "2026-01-02",
+      "max_order_date": "2026-06-29"
+    },
+    "data_quality": {
+      "blank_discount_count": 12,
+      "blank_rating_count": 15,
+      "outlier_order_count": 2,
+      "orders_in_analysis": 178,
+      "raw_payment_methods": [
+        {
+          "payment_method": "CARD",
+          "orders": 7
+        },
+        {
+          "payment_method": "COD",
+          "orders": 50
+        },
+        {
+          "payment_method": "Card",
+          "orders": 56
+        },
+        {
+          "payment_method": "UPI",
+          "orders": 53
+        },
+        {
+          "payment_method": "card",
+          "orders": 7
+        },
+        {
+          "payment_method": "cod",
+          "orders": 5
+        },
+        {
+          "payment_method": "upi",
+          "orders": 2
+        }
+      ],
+      "outlier_orders": [
+        {
+          "order_id": "O0098",
+          "customer_id": "C043",
+          "product_id": "P05",
+          "quantity": 30,
+          "returned": 0
+        },
+        {
+          "order_id": "O0011",
+          "customer_id": "C026",
+          "product_id": "P11",
+          "quantity": 25,
+          "returned": 1
+        }
+      ],
+      "possible_duplicate_orders": [
+        {
+          "customer_id": "C020",
+          "product_id": "P11",
+          "order_date": "2026-02-13",
+          "quantity": 1,
+          "discount_pct_for_match": 10,
+          "payment_method": "COD",
+          "rating": 3,
+          "returned": 0,
+          "copies": 2,
+          "order_ids": "O0151, O0180"
+        },
+        {
+          "customer_id": "C008",
+          "product_id": "P08",
+          "order_date": "2026-03-10",
+          "quantity": 2,
+          "discount_pct_for_match": 10,
+          "payment_method": "UPI",
+          "rating": 3,
+          "returned": 1,
+          "copies": 2,
+          "order_ids": "O0081, O0178"
+        },
+        {
+          "customer_id": "C010",
+          "product_id": "P14",
+          "order_date": "2026-05-06",
+          "quantity": 2,
+          "discount_pct_for_match": 20,
+          "payment_method": "CARD",
+          "rating": 1,
+          "returned": 0,
+          "copies": 2,
+          "order_ids": "O0121, O0179"
+        },
+        {
+          "customer_id": "C032",
+          "product_id": "P03",
+          "order_date": "2026-05-17",
+          "quantity": 3,
+          "discount_pct_for_match": 30,
+          "payment_method": "UPI",
+          "rating": 5,
+          "returned": 0,
+          "copies": 2,
+          "order_ids": "O0004, O0176"
+        },
+        {
+          "customer_id": "C005",
+          "product_id": "P15",
+          "order_date": "2026-06-11",
+          "quantity": 1,
+          "discount_pct_for_match": 30,
+          "payment_method": "CARD",
+          "rating": 4,
+          "returned": 0,
+          "copies": 2,
+          "order_ids": "O0041, O0177"
+        }
+      ],
+      "customers_without_orders": [
+        {
+          "customer_id": "C045",
+          "name": "Vihaan",
+          "city": "Mumbai"
+        }
+      ]
+    },
+    "kpis": {
+      "orders": 178,
+      "returned_orders": 44,
+      "return_rate": 0.2472,
+      "net_revenue": 60599.1,
+      "returned_line_value": 21316.1,
+      "average_rating": 3.04,
+      "rated_orders": 163
+    },
+    "return_rate_by_payment": [
+      {
+        "payment_method": "COD",
+        "orders": 53,
+        "returned_orders": 23,
+        "return_rate": 0.434
+      },
+      {
+        "payment_method": "UPI",
+        "orders": 55,
+        "returned_orders": 11,
+        "return_rate": 0.2
+      },
+      {
+        "payment_method": "Card",
+        "orders": 70,
+        "returned_orders": 10,
+        "return_rate": 0.1429
+      }
+    ],
+    "monthly_revenue": [
+      {
+        "order_month": "2026-01",
+        "orders": 22,
+        "kept_orders": 18,
+        "returned_orders": 4,
+        "net_revenue": 8025.1
+      },
+      {
+        "order_month": "2026-02",
+        "orders": 32,
+        "kept_orders": 25,
+        "returned_orders": 7,
+        "net_revenue": 10857.2
+      },
+      {
+        "order_month": "2026-03",
+        "orders": 38,
+        "kept_orders": 24,
+        "returned_orders": 14,
+        "net_revenue": 14332.2
+      },
+      {
+        "order_month": "2026-04",
+        "orders": 27,
+        "kept_orders": 17,
+        "returned_orders": 10,
+        "net_revenue": 5596.2
+      },
+      {
+        "order_month": "2026-05",
+        "orders": 33,
+        "kept_orders": 28,
+        "returned_orders": 5,
+        "net_revenue": 12452.7
+      },
+      {
+        "order_month": "2026-06",
+        "orders": 26,
+        "kept_orders": 22,
+        "returned_orders": 4,
+        "net_revenue": 9335.7
+      }
+    ],
+    "revenue_by_category": [
+      {
+        "category": "Haircare",
+        "orders": 53,
+        "returned_orders": 14,
+        "return_rate": 0.2642,
+        "net_revenue": 26108.1
+      },
+      {
+        "category": "Skincare",
+        "orders": 60,
+        "returned_orders": 19,
+        "return_rate": 0.3167,
+        "net_revenue": 17659.7
+      },
+      {
+        "category": "PersonalCare",
+        "orders": 36,
+        "returned_orders": 5,
+        "return_rate": 0.1389,
+        "net_revenue": 9977.0
+      },
+      {
+        "category": "Babycare",
+        "orders": 29,
+        "returned_orders": 6,
+        "return_rate": 0.2069,
+        "net_revenue": 6854.3
+      }
+    ]
+  }
+}

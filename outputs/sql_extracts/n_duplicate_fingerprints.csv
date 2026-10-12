@@ -1,0 +1,6 @@
+customer_id,product_id,order_date,quantity,discount_pct,payment_method,rating,returned,copy_count,order_ids
+C020,P11,2026-02-13,1,10,COD,3,0,2,"O0151,O0180"
+C008,P08,2026-03-10,2,10,UPI,3,1,2,"O0081,O0178"
+C010,P14,2026-05-06,2,20,CARD,1,0,2,"O0121,O0179"
+C032,P03,2026-05-17,3,30,UPI,5,0,2,"O0004,O0176"
+C005,P15,2026-06-11,1,30,CARD,4,0,2,"O0041,O0177"

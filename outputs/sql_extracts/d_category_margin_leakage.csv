@@ -1,0 +1,5 @@
+category,orders,returned_orders,return_rate_pct,net_gmv,returned_net_gmv,returned_net_share_pct
+Babycare,30,7,23.33,16805.0,9950.7,59.21
+Skincare,60,19,31.67,27346.0,9686.3,35.42
+Haircare,54,14,25.93,44956.1,8378.0,18.64
+PersonalCare,36,5,13.89,10753.1,776.1,7.22

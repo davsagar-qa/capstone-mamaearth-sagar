@@ -1,0 +1,6 @@
+discount_band,orders,returned_orders,return_rate_pct,returned_net_gmv
+0,26,9,34.62,12851.0
+1-10,41,11,26.83,5447.7
+11-20,41,13,31.71,7096.8
+21-30,60,10,16.67,2847.6
+missing,12,2,16.67,548.0

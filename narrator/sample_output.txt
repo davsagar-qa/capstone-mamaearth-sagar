@@ -1,0 +1,8 @@
+Situation
+The baseline financial reconciliation establishes a raw total revenue of 99860.2 INR, which adjusts to a cleaned total revenue of 97358.3 INR after accounting for a duplicate reconciliation delta of 2501.9 INR. Across standard operations, performance peaked in 2026-03 (March 2026) with revenue reaching 20318.9 INR.
+
+Complication
+Data integrity and operational return volumes show significant friction across specific channels and periods. Reporting for 2026-01 was heavily distorted by an outlier-inflated month, showing an apparent revenue of 29582.1 INR against a corrected revenue of only 11637.1 INR. Concurrently, product returns are heavily skewed by payment method: CARD stands at a return rate of 14.7 and UPI is at 18.9, while COD drives the highest volume at 44.4. Operational risk concentrates severely in tier 2 cities using COD, which emerges as the highest-risk segment with a return rate percentage of 54.5.
+
+Resolution
+Finance and regional operations must align reporting cadences to the validated baseline of 97358.3 INR and recognize March 2026 (2026-03), with its 20318.9 INR revenue, as the true peak benchmark rather than the distorted 2026-01 figures. Operational interventions must immediately target COD orders, focusing resources on tier 2 city fulfillment to mitigate the 54.5 return rate percentage, while incentivizing transitions toward CARD (14.7 return rate) and UPI (18.9 return rate) to safeguard net margins.

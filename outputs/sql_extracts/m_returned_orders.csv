@@ -1,0 +1,46 @@
+order_id,customer_id,customer_name,city,city_tier,product_id,product_name,category,order_date,quantity,discount_pct,payment_method,rating,returned_net_gmv
+O0011,C026,Isha,Lucknow,2,P11,Milky Soft Baby Lotion,Babycare,2026-01-28,25,0,COD,2,7475.0
+O0102,C041,Ayaan,Lucknow,2,P10,Rice Sunscreen SPF50,Skincare,2026-01-24,3,0,CARD,4,1347.0
+O0047,C029,Tanish,Delhi,1,P03,Argan Hair Mask,Haircare,2026-03-02,2,0,COD,2,1198.0
+O0124,C043,Reyansh,Bangalore,1,P07,Vitamin C Serum,Skincare,2026-06-02,2,20,UPI,,1118.4
+O0103,C011,Arjun,Bangalore,1,P10,Rice Sunscreen SPF50,Skincare,2026-01-12,3,20,CARD,3,1077.6
+O0116,C024,Riya,Lucknow,2,P03,Argan Hair Mask,Haircare,2026-01-04,2,20,COD,3,958.4
+O0131,C029,Tanish,Delhi,1,P03,Argan Hair Mask,Haircare,2026-03-24,2,20,CARD,5,958.4
+O0056,C042,Sanya,Mumbai,1,P02,Onion Shampoo,Haircare,2026-03-05,2,10,COD,2,718.2
+O0165,C035,Krishna,Jaipur,2,P02,Onion Shampoo,Haircare,2026-06-08,2,10,COD,2,718.2
+O0164,C032,Naina,Bangalore,1,P07,Vitamin C Serum,Skincare,2026-02-05,1,0,COD,,699.0
+O0125,C009,Rohan,Lucknow,2,P07,Vitamin C Serum,Skincare,2026-05-22,1,10,COD,3,629.1
+O0167,C040,Vanya,Jaipur,2,P10,Rice Sunscreen SPF50,Skincare,2026-04-25,2,30,COD,2,628.6
+O0101,C025,Varun,Jaipur,2,P11,Milky Soft Baby Lotion,Babycare,2026-05-05,2,0,UPI,2,598.0
+O0099,C029,Tanish,Delhi,1,P04,Anti-Hairfall Serum,Haircare,2026-04-27,1,10,COD,1,584.1
+O0122,C024,Riya,Lucknow,2,P07,Vitamin C Serum,Skincare,2026-03-02,1,20,UPI,5,559.2
+O0117,C038,Myra,Delhi,1,P13,Baby Massage Oil,Babycare,2026-04-06,2,0,COD,5,558.0
+O0129,C024,Riya,Lucknow,2,P04,Anti-Hairfall Serum,Haircare,2026-02-26,1,20,UPI,4,519.2
+O0003,C008,Meera,Lucknow,2,P12,Baby Shampoo,Babycare,2026-03-20,2,0,COD,1,498.0
+O0146,C014,Neha,Lucknow,2,P05,Rice Water Conditioner,Haircare,2026-03-16,2,30,CARD,2,488.6
+O0155,C033,Siddharth,Lucknow,2,P03,Argan Hair Mask,Haircare,2026-04-26,1,20,COD,1,479.2
+O0034,C028,Shreya,Bangalore,1,P04,Anti-Hairfall Serum,Haircare,2026-05-28,1,30,COD,1,454.3
+O0043,C015,Yash,Jaipur,2,P06,Vitamin C Face Wash,Skincare,2026-06-28,2,10,CARD,1,448.2
+O0138,C007,Kabir,Lucknow,2,P12,Baby Shampoo,Babycare,2026-04-05,2,10,COD,4,448.2
+O0081,C008,Meera,Lucknow,2,P08,Tea Tree Face Wash,Skincare,2026-03-10,2,10,UPI,3,412.2
+O0178,C008,Meera,Lucknow,2,P08,Tea Tree Face Wash,Skincare,2026-03-10,2,10,UPI,3,412.2
+O0145,C043,Reyansh,Bangalore,1,P10,Rice Sunscreen SPF50,Skincare,2026-04-12,1,10,UPI,3,404.1
+O0029,C010,Sara,Mumbai,1,P08,Tea Tree Face Wash,Skincare,2026-02-15,2,20,UPI,4,366.4
+O0112,C041,Ayaan,Lucknow,2,P02,Onion Shampoo,Haircare,2026-04-23,1,10,COD,1,359.1
+O0152,C023,Nikhil,Mumbai,1,P05,Rice Water Conditioner,Haircare,2026-02-07,1,,COD,1,349.0
+O0040,C016,Pooja,Jaipur,2,P10,Rice Sunscreen SPF50,Skincare,2026-02-20,1,30,COD,5,314.3
+O0020,C005,Ishaan,Mumbai,1,P01,Onion Hair Oil,Haircare,2026-05-25,1,10,UPI,5,314.1
+O0141,C010,Sara,Mumbai,1,P01,Onion Hair Oil,Haircare,2026-05-16,1,20,COD,2,279.2
+O0012,C028,Shreya,Bangalore,1,P06,Vitamin C Face Wash,Skincare,2026-03-05,1,0,UPI,1,249.0
+O0100,C031,Aditya,Jaipur,2,P09,Ubtan Face Mask,Skincare,2026-06-27,1,20,CARD,5,239.2
+O0172,C024,Riya,Lucknow,2,P08,Tea Tree Face Wash,Skincare,2026-01-21,1,0,CARD,3,229.0
+O0063,C028,Shreya,Bangalore,1,P09,Ubtan Face Mask,Skincare,2026-03-04,1,30,UPI,2,209.3
+O0027,C003,Aditi,Mumbai,1,P12,Baby Shampoo,Babycare,2026-02-07,1,20,CARD,1,199.2
+O0015,C028,Shreya,Bangalore,1,P16,Aloe Vera Gel,PersonalCare,2026-03-17,1,,COD,3,199.0
+O0051,C035,Krishna,Jaipur,2,P08,Tea Tree Face Wash,Skincare,2026-03-11,1,20,CARD,4,183.2
+O0123,C042,Sanya,Mumbai,1,P12,Baby Shampoo,Babycare,2026-03-12,1,30,COD,1,174.3
+O0048,C010,Sara,Mumbai,1,P08,Tea Tree Face Wash,Skincare,2026-02-09,1,30,CARD,3,160.3
+O0053,C042,Sanya,Mumbai,1,P14,Charcoal Deodorant,PersonalCare,2026-04-29,1,20,COD,,159.2
+O0050,C025,Varun,Jaipur,2,P16,Aloe Vera Gel,PersonalCare,2026-04-01,1,30,COD,5,139.3
+O0079,C039,Om,Mumbai,1,P16,Aloe Vera Gel,PersonalCare,2026-03-01,1,30,COD,,139.3
+O0149,C026,Isha,Lucknow,2,P14,Charcoal Deodorant,PersonalCare,2026-04-14,1,30,COD,,139.3

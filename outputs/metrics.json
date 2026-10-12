@@ -1,0 +1,1416 @@
+{
+  "layer": "python_analysis",
+  "inputs_from": "sql/reports.sql executed against mamaearth.db",
+  "row_counts": {
+    "customers": 45,
+    "products": 16,
+    "orders": 180
+  },
+  "headline": {
+    "orders": 180,
+    "returned_orders": 45,
+    "return_rate_pct": 25.0,
+    "gross_gmv": 116840.0,
+    "net_gmv": 99860.2,
+    "returned_net_gmv": 28791.1,
+    "returned_net_share_pct": 28.83,
+    "rated_orders": 165,
+    "avg_rating": 3.02,
+    "realized_net_gmv": 71069.1
+  },
+  "null_audit": {
+    "null_discount_pct": 12,
+    "null_rating": 15,
+    "empty_string_discount_pct": 0,
+    "empty_string_rating": 0
+  },
+  "payment": {
+    "by_method": [
+      {
+        "payment_method": "COD",
+        "orders": 55,
+        "returned_orders": 24,
+        "return_rate_pct": 43.64,
+        "net_gmv": 39305.2,
+        "returned_net_gmv": 18298.3
+      },
+      {
+        "payment_method": "UPI",
+        "orders": 55,
+        "returned_orders": 11,
+        "return_rate_pct": 20.0,
+        "net_gmv": 26863.2,
+        "returned_net_gmv": 5162.1
+      },
+      {
+        "payment_method": "CARD",
+        "orders": 70,
+        "returned_orders": 10,
+        "return_rate_pct": 14.29,
+        "net_gmv": 33691.8,
+        "returned_net_gmv": 5330.7
+      }
+    ],
+    "cod_return_rate_pct": 43.64,
+    "cod_returned_net_gmv": 18298.3,
+    "prepaid_orders": 125,
+    "prepaid_returned_orders": 21,
+    "prepaid_return_rate_pct": 16.8,
+    "prepaid_returned_net_gmv": 10492.8,
+    "cod_vs_prepaid_return_rate_pp": 26.84
+  },
+  "geography": {
+    "city_tier": [
+      {
+        "city_tier": 1,
+        "orders": 112,
+        "returned_orders": 22,
+        "return_rate_pct": 19.64,
+        "net_gmv": 63433.5,
+        "returned_net_gmv": 10568.4
+      },
+      {
+        "city_tier": 2,
+        "orders": 68,
+        "returned_orders": 23,
+        "return_rate_pct": 33.82,
+        "net_gmv": 36426.7,
+        "returned_net_gmv": 18222.7
+      }
+    ],
+    "cities": [
+      {
+        "city": "Lucknow",
+        "city_tier": 2,
+        "orders": 49,
+        "returned_orders": 15,
+        "return_rate_pct": 30.61,
+        "net_gmv": 27523.3,
+        "returned_net_gmv": 14953.7
+      },
+      {
+        "city": "Bangalore",
+        "city_tier": 1,
+        "orders": 33,
+        "returned_orders": 8,
+        "return_rate_pct": 24.24,
+        "net_gmv": 28138.4,
+        "returned_net_gmv": 4410.7
+      },
+      {
+        "city": "Delhi",
+        "city_tier": 1,
+        "orders": 23,
+        "returned_orders": 4,
+        "return_rate_pct": 17.39,
+        "net_gmv": 10151.7,
+        "returned_net_gmv": 3298.5
+      },
+      {
+        "city": "Jaipur",
+        "city_tier": 2,
+        "orders": 19,
+        "returned_orders": 8,
+        "return_rate_pct": 42.11,
+        "net_gmv": 8903.4,
+        "returned_net_gmv": 3269.0
+      },
+      {
+        "city": "Mumbai",
+        "city_tier": 1,
+        "orders": 56,
+        "returned_orders": 10,
+        "return_rate_pct": 17.86,
+        "net_gmv": 25143.4,
+        "returned_net_gmv": 2859.2
+      }
+    ],
+    "highest_leakage_city": {
+      "city": "Lucknow",
+      "city_tier": 2,
+      "orders": 49,
+      "returned_orders": 15,
+      "return_rate_pct": 30.61,
+      "net_gmv": 27523.3,
+      "returned_net_gmv": 14953.7
+    },
+    "highest_return_rate_city": {
+      "city": "Jaipur",
+      "city_tier": 2,
+      "orders": 19,
+      "returned_orders": 8,
+      "return_rate_pct": 42.11,
+      "net_gmv": 8903.4,
+      "returned_net_gmv": 3269.0
+    }
+  },
+  "category": {
+    "rows": [
+      {
+        "category": "Babycare",
+        "orders": 30,
+        "returned_orders": 7,
+        "return_rate_pct": 23.33,
+        "net_gmv": 16805.0,
+        "returned_net_gmv": 9950.7,
+        "returned_net_share_pct": 59.21
+      },
+      {
+        "category": "Skincare",
+        "orders": 60,
+        "returned_orders": 19,
+        "return_rate_pct": 31.67,
+        "net_gmv": 27346.0,
+        "returned_net_gmv": 9686.3,
+        "returned_net_share_pct": 35.42
+      },
+      {
+        "category": "Haircare",
+        "orders": 54,
+        "returned_orders": 14,
+        "return_rate_pct": 25.93,
+        "net_gmv": 44956.1,
+        "returned_net_gmv": 8378.0,
+        "returned_net_share_pct": 18.64
+      },
+      {
+        "category": "PersonalCare",
+        "orders": 36,
+        "returned_orders": 5,
+        "return_rate_pct": 13.89,
+        "net_gmv": 10753.1,
+        "returned_net_gmv": 776.1,
+        "returned_net_share_pct": 7.22
+      }
+    ],
+    "highest_leakage_category": {
+      "category": "Babycare",
+      "orders": 30,
+      "returned_orders": 7,
+      "return_rate_pct": 23.33,
+      "net_gmv": 16805.0,
+      "returned_net_gmv": 9950.7,
+      "returned_net_share_pct": 59.21
+    },
+    "highest_return_rate_category": {
+      "category": "Skincare",
+      "orders": 60,
+      "returned_orders": 19,
+      "return_rate_pct": 31.67,
+      "net_gmv": 27346.0,
+      "returned_net_gmv": 9686.3,
+      "returned_net_share_pct": 35.42
+    },
+    "rating_by_category": [
+      {
+        "category": "Babycare",
+        "orders": 30,
+        "rated_orders": 26,
+        "avg_rating": 2.62
+      },
+      {
+        "category": "Haircare",
+        "orders": 54,
+        "rated_orders": 52,
+        "avg_rating": 3.08
+      },
+      {
+        "category": "Skincare",
+        "orders": 60,
+        "rated_orders": 57,
+        "avg_rating": 3.11
+      },
+      {
+        "category": "PersonalCare",
+        "orders": 36,
+        "rated_orders": 30,
+        "avg_rating": 3.13
+      }
+    ]
+  },
+  "product": {
+    "rows": [
+      {
+        "product_id": "P11",
+        "product_name": "Milky Soft Baby Lotion",
+        "category": "Babycare",
+        "orders": 17,
+        "returned_orders": 2,
+        "return_rate_pct": 11.76,
+        "net_gmv": 12498.2,
+        "returned_net_gmv": 8073.0
+      },
+      {
+        "product_id": "P10",
+        "product_name": "Rice Sunscreen SPF50",
+        "category": "Skincare",
+        "orders": 16,
+        "returned_orders": 5,
+        "return_rate_pct": 31.25,
+        "net_gmv": 9788.2,
+        "returned_net_gmv": 3771.6
+      },
+      {
+        "product_id": "P03",
+        "product_name": "Argan Hair Mask",
+        "category": "Haircare",
+        "orders": 15,
+        "returned_orders": 4,
+        "return_rate_pct": 26.67,
+        "net_gmv": 12399.3,
+        "returned_net_gmv": 3594.0
+      },
+      {
+        "product_id": "P07",
+        "product_name": "Vitamin C Serum",
+        "category": "Skincare",
+        "orders": 12,
+        "returned_orders": 4,
+        "return_rate_pct": 33.33,
+        "net_gmv": 8038.5,
+        "returned_net_gmv": 3005.7
+      },
+      {
+        "product_id": "P02",
+        "product_name": "Onion Shampoo",
+        "category": "Haircare",
+        "orders": 11,
+        "returned_orders": 3,
+        "return_rate_pct": 27.27,
+        "net_gmv": 6543.6,
+        "returned_net_gmv": 1795.5
+      },
+      {
+        "product_id": "P08",
+        "product_name": "Tea Tree Face Wash",
+        "category": "Skincare",
+        "orders": 17,
+        "returned_orders": 6,
+        "return_rate_pct": 35.29,
+        "net_gmv": 5404.4,
+        "returned_net_gmv": 1763.3
+      },
+      {
+        "product_id": "P04",
+        "product_name": "Anti-Hairfall Serum",
+        "category": "Haircare",
+        "orders": 7,
+        "returned_orders": 3,
+        "return_rate_pct": 42.86,
+        "net_gmv": 5841.0,
+        "returned_net_gmv": 1557.6
+      },
+      {
+        "product_id": "P12",
+        "product_name": "Baby Shampoo",
+        "category": "Babycare",
+        "orders": 6,
+        "returned_orders": 4,
+        "return_rate_pct": 66.67,
+        "net_gmv": 1767.9,
+        "returned_net_gmv": 1319.7
+      },
+      {
+        "product_id": "P05",
+        "product_name": "Rice Water Conditioner",
+        "category": "Haircare",
+        "orders": 10,
+        "returned_orders": 2,
+        "return_rate_pct": 20.0,
+        "net_gmv": 15356.0,
+        "returned_net_gmv": 837.6
+      },
+      {
+        "product_id": "P06",
+        "product_name": "Vitamin C Face Wash",
+        "category": "Skincare",
+        "orders": 7,
+        "returned_orders": 2,
+        "return_rate_pct": 28.57,
+        "net_gmv": 1992.0,
+        "returned_net_gmv": 697.2
+      },
+      {
+        "product_id": "P01",
+        "product_name": "Onion Hair Oil",
+        "category": "Haircare",
+        "orders": 11,
+        "returned_orders": 2,
+        "return_rate_pct": 18.18,
+        "net_gmv": 4816.2,
+        "returned_net_gmv": 593.3
+      },
+      {
+        "product_id": "P13",
+        "product_name": "Baby Massage Oil",
+        "category": "Babycare",
+        "orders": 7,
+        "returned_orders": 1,
+        "return_rate_pct": 14.29,
+        "net_gmv": 2538.9,
+        "returned_net_gmv": 558.0
+      },
+      {
+        "product_id": "P16",
+        "product_name": "Aloe Vera Gel",
+        "category": "PersonalCare",
+        "orders": 10,
+        "returned_orders": 3,
+        "return_rate_pct": 30.0,
+        "net_gmv": 1810.9,
+        "returned_net_gmv": 477.6
+      },
+      {
+        "product_id": "P09",
+        "product_name": "Ubtan Face Mask",
+        "category": "Skincare",
+        "orders": 8,
+        "returned_orders": 2,
+        "return_rate_pct": 25.0,
+        "net_gmv": 2122.9,
+        "returned_net_gmv": 448.5
+      },
+      {
+        "product_id": "P14",
+        "product_name": "Charcoal Deodorant",
+        "category": "PersonalCare",
+        "orders": 14,
+        "returned_orders": 2,
+        "return_rate_pct": 14.29,
+        "net_gmv": 3323.3,
+        "returned_net_gmv": 298.5
+      },
+      {
+        "product_id": "P15",
+        "product_name": "Tea Tree Body Wash",
+        "category": "PersonalCare",
+        "orders": 12,
+        "returned_orders": 0,
+        "return_rate_pct": 0.0,
+        "net_gmv": 5618.9,
+        "returned_net_gmv": 0.0
+      }
+    ],
+    "highest_leakage_product": {
+      "product_id": "P11",
+      "product_name": "Milky Soft Baby Lotion",
+      "category": "Babycare",
+      "orders": 17,
+      "returned_orders": 2,
+      "return_rate_pct": 11.76,
+      "net_gmv": 12498.2,
+      "returned_net_gmv": 8073.0
+    }
+  },
+  "discount_band": [
+    {
+      "discount_band": "0",
+      "orders": 26,
+      "returned_orders": 9,
+      "return_rate_pct": 34.62,
+      "returned_net_gmv": 12851.0
+    },
+    {
+      "discount_band": "1-10",
+      "orders": 41,
+      "returned_orders": 11,
+      "return_rate_pct": 26.83,
+      "returned_net_gmv": 5447.7
+    },
+    {
+      "discount_band": "11-20",
+      "orders": 41,
+      "returned_orders": 13,
+      "return_rate_pct": 31.71,
+      "returned_net_gmv": 7096.8
+    },
+    {
+      "discount_band": "21-30",
+      "orders": 60,
+      "returned_orders": 10,
+      "return_rate_pct": 16.67,
+      "returned_net_gmv": 2847.6
+    },
+    {
+      "discount_band": "missing",
+      "orders": 12,
+      "returned_orders": 2,
+      "return_rate_pct": 16.67,
+      "returned_net_gmv": 548.0
+    }
+  ],
+  "rating_vs_return": {
+    "rows": [
+      {
+        "rating_bucket": "1",
+        "orders": 38,
+        "returned_orders": 10,
+        "return_rate_pct": 26.32,
+        "returned_net_gmv": 3794.4
+      },
+      {
+        "rating_bucket": "2",
+        "orders": 23,
+        "returned_orders": 9,
+        "return_rate_pct": 39.13,
+        "returned_net_gmv": 12313.1
+      },
+      {
+        "rating_bucket": "3",
+        "orders": 37,
+        "returned_orders": 9,
+        "return_rate_pct": 24.32,
+        "returned_net_gmv": 4481.9
+      },
+      {
+        "rating_bucket": "4",
+        "orders": 31,
+        "returned_orders": 5,
+        "return_rate_pct": 16.13,
+        "returned_net_gmv": 2864.0
+      },
+      {
+        "rating_bucket": "5",
+        "orders": 36,
+        "returned_orders": 7,
+        "return_rate_pct": 19.44,
+        "returned_net_gmv": 3082.5
+      },
+      {
+        "rating_bucket": "unrated",
+        "orders": 15,
+        "returned_orders": 5,
+        "return_rate_pct": 33.33,
+        "returned_net_gmv": 2255.2
+      }
+    ],
+    "rating_1_2_orders": 61,
+    "rating_1_2_return_rate_pct": 31.15,
+    "rating_4_5_orders": 67,
+    "rating_4_5_return_rate_pct": 17.91
+  },
+  "acquisition": {
+    "rows": [
+      {
+        "acquisition_source": "Ad",
+        "orders": 53,
+        "returned_orders": 17,
+        "return_rate_pct": 32.08,
+        "returned_net_gmv": 7601.2
+      },
+      {
+        "acquisition_source": "Social",
+        "orders": 35,
+        "returned_orders": 10,
+        "return_rate_pct": 28.57,
+        "returned_net_gmv": 5647.2
+      },
+      {
+        "acquisition_source": "Referral",
+        "orders": 30,
+        "returned_orders": 7,
+        "return_rate_pct": 23.33,
+        "returned_net_gmv": 4105.7
+      },
+      {
+        "acquisition_source": "Organic",
+        "orders": 62,
+        "returned_orders": 11,
+        "return_rate_pct": 17.74,
+        "returned_net_gmv": 11437.0
+      }
+    ],
+    "highest_return_rate_source": {
+      "acquisition_source": "Ad",
+      "orders": 53,
+      "returned_orders": 17,
+      "return_rate_pct": 32.08,
+      "returned_net_gmv": 7601.2
+    }
+  },
+  "concentration": {
+    "returned_order_count": 45,
+    "top5_returned_orders": [
+      {
+        "order_id": "O0011",
+        "customer_id": "C026",
+        "customer_name": "Isha",
+        "city": "Lucknow",
+        "city_tier": 2,
+        "product_id": "P11",
+        "product_name": "Milky Soft Baby Lotion",
+        "category": "Babycare",
+        "order_date": "2026-01-28",
+        "quantity": 25,
+        "discount_pct": 0,
+        "payment_method": "COD",
+        "rating": 2,
+        "returned_net_gmv": 7475.0
+      },
+      {
+        "order_id": "O0102",
+        "customer_id": "C041",
+        "customer_name": "Ayaan",
+        "city": "Lucknow",
+        "city_tier": 2,
+        "product_id": "P10",
+        "product_name": "Rice Sunscreen SPF50",
+        "category": "Skincare",
+        "order_date": "2026-01-24",
+        "quantity": 3,
+        "discount_pct": 0,
+        "payment_method": "CARD",
+        "rating": 4,
+        "returned_net_gmv": 1347.0
+      },
+      {
+        "order_id": "O0047",
+        "customer_id": "C029",
+        "customer_name": "Tanish",
+        "city": "Delhi",
+        "city_tier": 1,
+        "product_id": "P03",
+        "product_name": "Argan Hair Mask",
+        "category": "Haircare",
+        "order_date": "2026-03-02",
+        "quantity": 2,
+        "discount_pct": 0,
+        "payment_method": "COD",
+        "rating": 2,
+        "returned_net_gmv": 1198.0
+      },
+      {
+        "order_id": "O0124",
+        "customer_id": "C043",
+        "customer_name": "Reyansh",
+        "city": "Bangalore",
+        "city_tier": 1,
+        "product_id": "P07",
+        "product_name": "Vitamin C Serum",
+        "category": "Skincare",
+        "order_date": "2026-06-02",
+        "quantity": 2,
+        "discount_pct": 20,
+        "payment_method": "UPI",
+        "rating": null,
+        "returned_net_gmv": 1118.4
+      },
+      {
+        "order_id": "O0103",
+        "customer_id": "C011",
+        "customer_name": "Arjun",
+        "city": "Bangalore",
+        "city_tier": 1,
+        "product_id": "P10",
+        "product_name": "Rice Sunscreen SPF50",
+        "category": "Skincare",
+        "order_date": "2026-01-12",
+        "quantity": 3,
+        "discount_pct": 20,
+        "payment_method": "CARD",
+        "rating": 3,
+        "returned_net_gmv": 1077.6
+      }
+    ],
+    "top5_returned_net_gmv": 12216.0,
+    "top5_share_of_returned_net_pct": 42.43
+  },
+  "data_quality": {
+    "quantity_outliers": [
+      {
+        "order_id": "O0098",
+        "customer_id": "C043",
+        "city": "Bangalore",
+        "product_name": "Rice Water Conditioner",
+        "order_date": "2026-01-10",
+        "quantity": 30,
+        "payment_method": "COD",
+        "rating": 1,
+        "returned": 0,
+        "net_gmv": 10470.0
+      },
+      {
+        "order_id": "O0011",
+        "customer_id": "C026",
+        "city": "Lucknow",
+        "product_name": "Milky Soft Baby Lotion",
+        "order_date": "2026-01-28",
+        "quantity": 25,
+        "payment_method": "COD",
+        "rating": 2,
+        "returned": 1,
+        "net_gmv": 7475.0
+      }
+    ],
+    "outlier_net_gmv": 17945.0,
+    "outlier_returned_net_gmv": 7475.0,
+    "outlier_share_of_returned_net_pct": 25.96,
+    "duplicate_groups": [
+      {
+        "customer_id": "C020",
+        "product_id": "P11",
+        "order_date": "2026-02-13",
+        "quantity": 1,
+        "discount_pct": 10,
+        "payment_method": "COD",
+        "rating": 3,
+        "returned": 0,
+        "copy_count": 2,
+        "order_ids": "O0151,O0180"
+      },
+      {
+        "customer_id": "C008",
+        "product_id": "P08",
+        "order_date": "2026-03-10",
+        "quantity": 2,
+        "discount_pct": 10,
+        "payment_method": "UPI",
+        "rating": 3,
+        "returned": 1,
+        "copy_count": 2,
+        "order_ids": "O0081,O0178"
+      },
+      {
+        "customer_id": "C010",
+        "product_id": "P14",
+        "order_date": "2026-05-06",
+        "quantity": 2,
+        "discount_pct": 20,
+        "payment_method": "CARD",
+        "rating": 1,
+        "returned": 0,
+        "copy_count": 2,
+        "order_ids": "O0121,O0179"
+      },
+      {
+        "customer_id": "C032",
+        "product_id": "P03",
+        "order_date": "2026-05-17",
+        "quantity": 3,
+        "discount_pct": 30,
+        "payment_method": "UPI",
+        "rating": 5,
+        "returned": 0,
+        "copy_count": 2,
+        "order_ids": "O0004,O0176"
+      },
+      {
+        "customer_id": "C005",
+        "product_id": "P15",
+        "order_date": "2026-06-11",
+        "quantity": 1,
+        "discount_pct": 30,
+        "payment_method": "CARD",
+        "rating": 4,
+        "returned": 0,
+        "copy_count": 2,
+        "order_ids": "O0041,O0177"
+      }
+    ],
+    "extra_duplicate_rows": 5,
+    "orders_before_signup_count": 87,
+    "orders_before_signup": [
+      {
+        "order_id": "O0007",
+        "customer_id": "C002",
+        "name": "Vivaan",
+        "signup_date": "2026-02-27",
+        "order_date": "2026-01-02",
+        "returned": 0
+      },
+      {
+        "order_id": "O0116",
+        "customer_id": "C024",
+        "name": "Riya",
+        "signup_date": "2026-03-04",
+        "order_date": "2026-01-04",
+        "returned": 1
+      },
+      {
+        "order_id": "O0163",
+        "customer_id": "C006",
+        "name": "Diya",
+        "signup_date": "2026-05-10",
+        "order_date": "2026-01-05",
+        "returned": 0
+      },
+      {
+        "order_id": "O0174",
+        "customer_id": "C040",
+        "name": "Vanya",
+        "signup_date": "2026-05-16",
+        "order_date": "2026-01-05",
+        "returned": 0
+      },
+      {
+        "order_id": "O0098",
+        "customer_id": "C043",
+        "name": "Reyansh",
+        "signup_date": "2026-06-14",
+        "order_date": "2026-01-10",
+        "returned": 0
+      },
+      {
+        "order_id": "O0025",
+        "customer_id": "C006",
+        "name": "Diya",
+        "signup_date": "2026-05-10",
+        "order_date": "2026-01-12",
+        "returned": 0
+      },
+      {
+        "order_id": "O0103",
+        "customer_id": "C011",
+        "name": "Arjun",
+        "signup_date": "2026-03-13",
+        "order_date": "2026-01-12",
+        "returned": 1
+      },
+      {
+        "order_id": "O0119",
+        "customer_id": "C042",
+        "name": "Sanya",
+        "signup_date": "2026-06-24",
+        "order_date": "2026-01-12",
+        "returned": 0
+      },
+      {
+        "order_id": "O0166",
+        "customer_id": "C040",
+        "name": "Vanya",
+        "signup_date": "2026-05-16",
+        "order_date": "2026-01-12",
+        "returned": 0
+      },
+      {
+        "order_id": "O0175",
+        "customer_id": "C019",
+        "name": "Dev",
+        "signup_date": "2026-01-21",
+        "order_date": "2026-01-13",
+        "returned": 0
+      },
+      {
+        "order_id": "O0010",
+        "customer_id": "C023",
+        "name": "Nikhil",
+        "signup_date": "2026-06-05",
+        "order_date": "2026-01-14",
+        "returned": 0
+      },
+      {
+        "order_id": "O0169",
+        "customer_id": "C013",
+        "name": "Karan",
+        "signup_date": "2026-04-02",
+        "order_date": "2026-01-14",
+        "returned": 0
+      },
+      {
+        "order_id": "O0017",
+        "customer_id": "C006",
+        "name": "Diya",
+        "signup_date": "2026-05-10",
+        "order_date": "2026-01-18",
+        "returned": 0
+      },
+      {
+        "order_id": "O0021",
+        "customer_id": "C017",
+        "name": "Rahul",
+        "signup_date": "2026-04-03",
+        "order_date": "2026-01-18",
+        "returned": 0
+      },
+      {
+        "order_id": "O0035",
+        "customer_id": "C034",
+        "name": "Zara",
+        "signup_date": "2026-04-20",
+        "order_date": "2026-01-18",
+        "returned": 0
+      },
+      {
+        "order_id": "O0074",
+        "customer_id": "C008",
+        "name": "Meera",
+        "signup_date": "2026-04-18",
+        "order_date": "2026-01-19",
+        "returned": 0
+      },
+      {
+        "order_id": "O0172",
+        "customer_id": "C024",
+        "name": "Riya",
+        "signup_date": "2026-03-04",
+        "order_date": "2026-01-21",
+        "returned": 1
+      },
+      {
+        "order_id": "O0135",
+        "customer_id": "C006",
+        "name": "Diya",
+        "signup_date": "2026-05-10",
+        "order_date": "2026-01-25",
+        "returned": 0
+      },
+      {
+        "order_id": "O0077",
+        "customer_id": "C040",
+        "name": "Vanya",
+        "signup_date": "2026-05-16",
+        "order_date": "2026-01-26",
+        "returned": 0
+      },
+      {
+        "order_id": "O0011",
+        "customer_id": "C026",
+        "name": "Isha",
+        "signup_date": "2026-02-26",
+        "order_date": "2026-01-28",
+        "returned": 1
+      },
+      {
+        "order_id": "O0023",
+        "customer_id": "C009",
+        "name": "Rohan",
+        "signup_date": "2026-03-13",
+        "order_date": "2026-01-28",
+        "returned": 0
+      },
+      {
+        "order_id": "O0026",
+        "customer_id": "C029",
+        "name": "Tanish",
+        "signup_date": "2026-05-26",
+        "order_date": "2026-01-29",
+        "returned": 0
+      },
+      {
+        "order_id": "O0120",
+        "customer_id": "C007",
+        "name": "Kabir",
+        "signup_date": "2026-02-20",
+        "order_date": "2026-02-04",
+        "returned": 0
+      },
+      {
+        "order_id": "O0115",
+        "customer_id": "C008",
+        "name": "Meera",
+        "signup_date": "2026-04-18",
+        "order_date": "2026-02-06",
+        "returned": 0
+      },
+      {
+        "order_id": "O0027",
+        "customer_id": "C003",
+        "name": "Aditi",
+        "signup_date": "2026-06-23",
+        "order_date": "2026-02-07",
+        "returned": 1
+      },
+      {
+        "order_id": "O0126",
+        "customer_id": "C010",
+        "name": "Sara",
+        "signup_date": "2026-02-10",
+        "order_date": "2026-02-07",
+        "returned": 0
+      },
+      {
+        "order_id": "O0152",
+        "customer_id": "C023",
+        "name": "Nikhil",
+        "signup_date": "2026-06-05",
+        "order_date": "2026-02-07",
+        "returned": 1
+      },
+      {
+        "order_id": "O0048",
+        "customer_id": "C010",
+        "name": "Sara",
+        "signup_date": "2026-02-10",
+        "order_date": "2026-02-09",
+        "returned": 1
+      },
+      {
+        "order_id": "O0058",
+        "customer_id": "C011",
+        "name": "Arjun",
+        "signup_date": "2026-03-13",
+        "order_date": "2026-02-11",
+        "returned": 0
+      },
+      {
+        "order_id": "O0170",
+        "customer_id": "C008",
+        "name": "Meera",
+        "signup_date": "2026-04-18",
+        "order_date": "2026-02-11",
+        "returned": 0
+      },
+      {
+        "order_id": "O0039",
+        "customer_id": "C044",
+        "name": "Aria",
+        "signup_date": "2026-04-22",
+        "order_date": "2026-02-13",
+        "returned": 0
+      },
+      {
+        "order_id": "O0151",
+        "customer_id": "C020",
+        "name": "Tara",
+        "signup_date": "2026-04-08",
+        "order_date": "2026-02-13",
+        "returned": 0
+      },
+      {
+        "order_id": "O0180",
+        "customer_id": "C020",
+        "name": "Tara",
+        "signup_date": "2026-04-08",
+        "order_date": "2026-02-13",
+        "returned": 0
+      },
+      {
+        "order_id": "O0037",
+        "customer_id": "C027",
+        "name": "Manav",
+        "signup_date": "2026-02-28",
+        "order_date": "2026-02-14",
+        "returned": 0
+      },
+      {
+        "order_id": "O0078",
+        "customer_id": "C043",
+        "name": "Reyansh",
+        "signup_date": "2026-06-14",
+        "order_date": "2026-02-14",
+        "returned": 0
+      },
+      {
+        "order_id": "O0158",
+        "customer_id": "C022",
+        "name": "Kavya",
+        "signup_date": "2026-06-21",
+        "order_date": "2026-02-14",
+        "returned": 0
+      },
+      {
+        "order_id": "O0071",
+        "customer_id": "C013",
+        "name": "Karan",
+        "signup_date": "2026-04-02",
+        "order_date": "2026-02-15",
+        "returned": 0
+      },
+      {
+        "order_id": "O0140",
+        "customer_id": "C020",
+        "name": "Tara",
+        "signup_date": "2026-04-08",
+        "order_date": "2026-02-16",
+        "returned": 0
+      },
+      {
+        "order_id": "O0069",
+        "customer_id": "C017",
+        "name": "Rahul",
+        "signup_date": "2026-04-03",
+        "order_date": "2026-02-19",
+        "returned": 0
+      },
+      {
+        "order_id": "O0049",
+        "customer_id": "C035",
+        "name": "Krishna",
+        "signup_date": "2026-04-03",
+        "order_date": "2026-02-22",
+        "returned": 0
+      },
+      {
+        "order_id": "O0067",
+        "customer_id": "C029",
+        "name": "Tanish",
+        "signup_date": "2026-05-26",
+        "order_date": "2026-02-26",
+        "returned": 0
+      },
+      {
+        "order_id": "O0118",
+        "customer_id": "C036",
+        "name": "Aisha",
+        "signup_date": "2026-05-11",
+        "order_date": "2026-02-26",
+        "returned": 0
+      },
+      {
+        "order_id": "O0129",
+        "customer_id": "C024",
+        "name": "Riya",
+        "signup_date": "2026-03-04",
+        "order_date": "2026-02-26",
+        "returned": 1
+      },
+      {
+        "order_id": "O0031",
+        "customer_id": "C013",
+        "name": "Karan",
+        "signup_date": "2026-04-02",
+        "order_date": "2026-02-28",
+        "returned": 0
+      },
+      {
+        "order_id": "O0133",
+        "customer_id": "C008",
+        "name": "Meera",
+        "signup_date": "2026-04-18",
+        "order_date": "2026-02-28",
+        "returned": 0
+      },
+      {
+        "order_id": "O0147",
+        "customer_id": "C009",
+        "name": "Rohan",
+        "signup_date": "2026-03-13",
+        "order_date": "2026-02-28",
+        "returned": 0
+      },
+      {
+        "order_id": "O0079",
+        "customer_id": "C039",
+        "name": "Om",
+        "signup_date": "2026-04-09",
+        "order_date": "2026-03-01",
+        "returned": 1
+      },
+      {
+        "order_id": "O0008",
+        "customer_id": "C003",
+        "name": "Aditi",
+        "signup_date": "2026-06-23",
+        "order_date": "2026-03-02",
+        "returned": 0
+      },
+      {
+        "order_id": "O0013",
+        "customer_id": "C042",
+        "name": "Sanya",
+        "signup_date": "2026-06-24",
+        "order_date": "2026-03-02",
+        "returned": 0
+      },
+      {
+        "order_id": "O0047",
+        "customer_id": "C029",
+        "name": "Tanish",
+        "signup_date": "2026-05-26",
+        "order_date": "2026-03-02",
+        "returned": 1
+      },
+      {
+        "order_id": "O0122",
+        "customer_id": "C024",
+        "name": "Riya",
+        "signup_date": "2026-03-04",
+        "order_date": "2026-03-02",
+        "returned": 1
+      },
+      {
+        "order_id": "O0105",
+        "customer_id": "C006",
+        "name": "Diya",
+        "signup_date": "2026-05-10",
+        "order_date": "2026-03-03",
+        "returned": 0
+      },
+      {
+        "order_id": "O0063",
+        "customer_id": "C028",
+        "name": "Shreya",
+        "signup_date": "2026-04-13",
+        "order_date": "2026-03-04",
+        "returned": 1
+      },
+      {
+        "order_id": "O0150",
+        "customer_id": "C006",
+        "name": "Diya",
+        "signup_date": "2026-05-10",
+        "order_date": "2026-03-04",
+        "returned": 0
+      },
+      {
+        "order_id": "O0012",
+        "customer_id": "C028",
+        "name": "Shreya",
+        "signup_date": "2026-04-13",
+        "order_date": "2026-03-05",
+        "returned": 1
+      },
+      {
+        "order_id": "O0056",
+        "customer_id": "C042",
+        "name": "Sanya",
+        "signup_date": "2026-06-24",
+        "order_date": "2026-03-05",
+        "returned": 1
+      },
+      {
+        "order_id": "O0088",
+        "customer_id": "C003",
+        "name": "Aditi",
+        "signup_date": "2026-06-23",
+        "order_date": "2026-03-06",
+        "returned": 0
+      },
+      {
+        "order_id": "O0114",
+        "customer_id": "C033",
+        "name": "Siddharth",
+        "signup_date": "2026-05-18",
+        "order_date": "2026-03-07",
+        "returned": 0
+      },
+      {
+        "order_id": "O0033",
+        "customer_id": "C008",
+        "name": "Meera",
+        "signup_date": "2026-04-18",
+        "order_date": "2026-03-09",
+        "returned": 0
+      },
+      {
+        "order_id": "O0081",
+        "customer_id": "C008",
+        "name": "Meera",
+        "signup_date": "2026-04-18",
+        "order_date": "2026-03-10",
+        "returned": 1
+      },
+      {
+        "order_id": "O0178",
+        "customer_id": "C008",
+        "name": "Meera",
+        "signup_date": "2026-04-18",
+        "order_date": "2026-03-10",
+        "returned": 1
+      },
+      {
+        "order_id": "O0051",
+        "customer_id": "C035",
+        "name": "Krishna",
+        "signup_date": "2026-04-03",
+        "order_date": "2026-03-11",
+        "returned": 1
+      },
+      {
+        "order_id": "O0143",
+        "customer_id": "C040",
+        "name": "Vanya",
+        "signup_date": "2026-05-16",
+        "order_date": "2026-03-11",
+        "returned": 0
+      },
+      {
+        "order_id": "O0046",
+        "customer_id": "C017",
+        "name": "Rahul",
+        "signup_date": "2026-04-03",
+        "order_date": "2026-03-12",
+        "returned": 0
+      },
+      {
+        "order_id": "O0094",
+        "customer_id": "C039",
+        "name": "Om",
+        "signup_date": "2026-04-09",
+        "order_date": "2026-03-12",
+        "returned": 0
+      },
+      {
+        "order_id": "O0123",
+        "customer_id": "C042",
+        "name": "Sanya",
+        "signup_date": "2026-06-24",
+        "order_date": "2026-03-12",
+        "returned": 1
+      },
+      {
+        "order_id": "O0159",
+        "customer_id": "C034",
+        "name": "Zara",
+        "signup_date": "2026-04-20",
+        "order_date": "2026-03-14",
+        "returned": 0
+      },
+      {
+        "order_id": "O0015",
+        "customer_id": "C028",
+        "name": "Shreya",
+        "signup_date": "2026-04-13",
+        "order_date": "2026-03-17",
+        "returned": 1
+      },
+      {
+        "order_id": "O0109",
+        "customer_id": "C023",
+        "name": "Nikhil",
+        "signup_date": "2026-06-05",
+        "order_date": "2026-03-17",
+        "returned": 0
+      },
+      {
+        "order_id": "O0003",
+        "customer_id": "C008",
+        "name": "Meera",
+        "signup_date": "2026-04-18",
+        "order_date": "2026-03-20",
+        "returned": 1
+      },
+      {
+        "order_id": "O0161",
+        "customer_id": "C006",
+        "name": "Diya",
+        "signup_date": "2026-05-10",
+        "order_date": "2026-03-21",
+        "returned": 0
+      },
+      {
+        "order_id": "O0131",
+        "customer_id": "C029",
+        "name": "Tanish",
+        "signup_date": "2026-05-26",
+        "order_date": "2026-03-24",
+        "returned": 1
+      },
+      {
+        "order_id": "O0036",
+        "customer_id": "C020",
+        "name": "Tara",
+        "signup_date": "2026-04-08",
+        "order_date": "2026-03-25",
+        "returned": 0
+      },
+      {
+        "order_id": "O0171",
+        "customer_id": "C006",
+        "name": "Diya",
+        "signup_date": "2026-05-10",
+        "order_date": "2026-03-31",
+        "returned": 0
+      },
+      {
+        "order_id": "O0127",
+        "customer_id": "C043",
+        "name": "Reyansh",
+        "signup_date": "2026-06-14",
+        "order_date": "2026-04-02",
+        "returned": 0
+      },
+      {
+        "order_id": "O0117",
+        "customer_id": "C038",
+        "name": "Myra",
+        "signup_date": "2026-06-24",
+        "order_date": "2026-04-06",
+        "returned": 1
+      },
+      {
+        "order_id": "O0162",
+        "customer_id": "C039",
+        "name": "Om",
+        "signup_date": "2026-04-09",
+        "order_date": "2026-04-07",
+        "returned": 0
+      },
+      {
+        "order_id": "O0145",
+        "customer_id": "C043",
+        "name": "Reyansh",
+        "signup_date": "2026-06-14",
+        "order_date": "2026-04-12",
+        "returned": 1
+      },
+      {
+        "order_id": "O0167",
+        "customer_id": "C040",
+        "name": "Vanya",
+        "signup_date": "2026-05-16",
+        "order_date": "2026-04-25",
+        "returned": 1
+      },
+      {
+        "order_id": "O0155",
+        "customer_id": "C033",
+        "name": "Siddharth",
+        "signup_date": "2026-05-18",
+        "order_date": "2026-04-26",
+        "returned": 1
+      },
+      {
+        "order_id": "O0099",
+        "customer_id": "C029",
+        "name": "Tanish",
+        "signup_date": "2026-05-26",
+        "order_date": "2026-04-27",
+        "returned": 1
+      },
+      {
+        "order_id": "O0053",
+        "customer_id": "C042",
+        "name": "Sanya",
+        "signup_date": "2026-06-24",
+        "order_date": "2026-04-29",
+        "returned": 1
+      },
+      {
+        "order_id": "O0130",
+        "customer_id": "C042",
+        "name": "Sanya",
+        "signup_date": "2026-06-24",
+        "order_date": "2026-05-03",
+        "returned": 0
+      },
+      {
+        "order_id": "O0086",
+        "customer_id": "C038",
+        "name": "Myra",
+        "signup_date": "2026-06-24",
+        "order_date": "2026-05-06",
+        "returned": 0
+      },
+      {
+        "order_id": "O0156",
+        "customer_id": "C042",
+        "name": "Sanya",
+        "signup_date": "2026-06-24",
+        "order_date": "2026-05-10",
+        "returned": 0
+      },
+      {
+        "order_id": "O0096",
+        "customer_id": "C029",
+        "name": "Tanish",
+        "signup_date": "2026-05-26",
+        "order_date": "2026-05-22",
+        "returned": 0
+      },
+      {
+        "order_id": "O0124",
+        "customer_id": "C043",
+        "name": "Reyansh",
+        "signup_date": "2026-06-14",
+        "order_date": "2026-06-02",
+        "returned": 1
+      }
+    ]
+  },
+  "action_subset": {
+    "definition": "Returned COD orders plus quantity outliers; the overlap where ops and finance should intervene first.",
+    "highest_single_return_order_id": "O0011",
+    "highest_single_return_net_gmv": 7475.0
+  }
+}

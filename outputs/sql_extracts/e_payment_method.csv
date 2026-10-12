@@ -1,0 +1,4 @@
+payment_method,orders,returned_orders,return_rate_pct,net_gmv,returned_net_gmv
+COD,55,24,43.64,39305.2,18298.3
+UPI,55,11,20.0,26863.2,5162.1
+CARD,70,10,14.29,33691.8,5330.7
